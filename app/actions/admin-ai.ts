@@ -3,7 +3,7 @@
 import { getSession } from '@/lib/auth';
 import { queryAIGrowthAdvisor, getSellerGrowthAnalytics } from '@/lib/ai-seller-analytics';
 import { supabaseAdmin } from '@/lib/supabase';
-import { safeRevalidatePath } from '@/lib/utils';
+import { safeRevalidatePath } from '@/lib/server-utils';
 
 export type AIAdvisorResponse = 
   | { success: true; answer: string; recommendedAction: string; relevantSellers: string[] }

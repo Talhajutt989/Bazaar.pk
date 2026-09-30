@@ -1,6 +1,6 @@
 'use server';
  
-import { safeRevalidatePath } from '@/lib/utils';
+import { safeRevalidatePath } from '@/lib/server-utils';
 import { supabaseAdmin } from '@/lib/supabase';
 import { clearSessionCookie, hashPassword, setSessionCookie, verifyPassword, getSession } from '@/lib/auth';
 

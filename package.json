@@ -16,9 +16,6 @@
     "prisma:seed": "tsx prisma/seed.ts",
     "supabase:seed": "tsx scripts/seed-supabase.ts"
   },
-  "prisma": {
-    "seed": "tsx prisma/seed.ts"
-  },
   "dependencies": {
     "@prisma/client": "^6.4.1",
     "@supabase/supabase-js": "^2.116.0",
@@ -26,7 +23,7 @@
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",
     "lucide-react": "^0.475.0",
-    "next": "15.1.7",
+    "next": "^16.3.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwind-merge": "^2.6.0"

@@ -1,6 +1,6 @@
 'use server';
 
-import { safeRevalidatePath } from '@/lib/utils';
+import { safeRevalidatePath } from '@/lib/server-utils';
 import { getSession } from '@/lib/auth';
 import { supabaseAdmin } from '@/lib/supabase';
 import { saveOrSubmitVendorKyc, getStoreKyc } from '@/lib/kyc';
