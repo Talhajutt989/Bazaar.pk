@@ -11,14 +11,10 @@ const supabaseServiceKey =
   process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY ||
   '';
 
-/**
- * Standard public Supabase client for browser and client components
- */
+// Standard public Supabase client for browser and client components
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-/**
- * Privileged admin Supabase client for server actions and backend routes
- */
+// Privileged admin Supabase client for server actions and backend routes
 export const supabaseAdmin = createClient(supabaseUrl, supabaseServiceKey, {
   auth: {
     autoRefreshToken: false,
